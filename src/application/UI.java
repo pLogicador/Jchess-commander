@@ -46,7 +46,27 @@ public class UI {
     public static final String BLUE_BOLD = "\033[1;34m";   
     public static final String PURPLE_BOLD = "\033[1;35m"; 
     public static final String CYAN_BOLD = "\033[1;36m";   
-    public static final String WHITE_BOLD = "\033[1;37m";  
+    public static final String WHITE_BOLD = "\033[1;37m";
+    
+    // Bold High Intensity
+    public static final String BLACK_BOLD_BRIGHT = "\033[1;90m";
+    public static final String RED_BOLD_BRIGHT = "\033[1;91m"; 
+    public static final String GREEN_BOLD_BRIGHT = "\033[1;92m"; 
+    public static final String YELLOW_BOLD_BRIGHT = "\033[1;93m";
+    public static final String BLUE_BOLD_BRIGHT = "\033[1;94m"; 
+    public static final String PURPLE_BOLD_BRIGHT = "\033[1;95m";
+    public static final String CYAN_BOLD_BRIGHT = "\033[1;96m";  
+    public static final String WHITE_BOLD_BRIGHT = "\033[1;97m"; 
+    
+    // Underline
+    public static final String BLACK_UNDERLINED = "\033[4;30m";
+    public static final String RED_UNDERLINED = "\033[4;31m";
+    public static final String GREEN_UNDERLINED = "\033[4;32m";
+    public static final String YELLOW_UNDERLINED = "\033[4;33m";
+    public static final String BLUE_UNDERLINED = "\033[4;34m";
+    public static final String PURPLE_UNDERLINED = "\033[4;35m";
+    public static final String CYAN_UNDERLINED = "\033[4;36m";
+    public static final String WHITE_UNDERLINED = "\033[4;37m";
 	
 	// https://stackoverflow.com/questions/2979383/java-clear-the-console
 	public static void clearScreen() {
@@ -73,6 +93,9 @@ public class UI {
 		printCapturedPieces(captured);
 		System.out.println("\nTurn: " + chessMatch.getTurn());
 		System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
+		if (chessMatch.getCheck()) {
+			System.out.println("!CHECK!");
+		}
 	}
 	
 	public static void printBoard(ChessPiece[][] pieces) {
@@ -101,7 +124,7 @@ public class UI {
 	
 	private static void printPiece(ChessPiece piece, boolean background) {
 		if (background) {
-			System.out.print(ANSI_GREEN_BACKGROUND);
+			System.out.print(ANSI_BLUE_BACKGROUND);
 		}
     	if (piece == null) {
             System.out.print("-" + ANSI_RESET);
