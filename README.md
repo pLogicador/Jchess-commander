@@ -13,7 +13,7 @@ Todo o desenvolvimento foi conduzido com base em princípios de design orientado
 - Java: Linguagem de programação utilizada para o desenvolvimento do projeto.
 - Git: Sistema de controle de versão usado para gerenciar o código-fonte do projeto.
 - GitHub: Plataforma utilizada para hospedar o repositório remoto do projeto.
-- 
+
 # Ferramentas e Dependências
 - JDK 17: Kit de Desenvolvimento Java necessário para compilar e executar o projeto.
 - Terminal/Git Bash: Utilizado para executar comandos Git e interagir com o projeto.
