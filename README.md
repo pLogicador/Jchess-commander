@@ -1,4 +1,5 @@
 # Sistema de Jogo de Xadrez
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/pLogicador/Jchess-commander/blob/main/LICENSE) 
 
 # Sobre o projeto
 Este sistema simula um jogo de xadrez, permitindo que os jogadores movam peças, verifiquem possíveis movimentos, manipulem regras especiais (como xeque e xeque-mate), e muito mais. 
